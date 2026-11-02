@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "SOOP 플레이어 단축키",
+  "version": "1.3.0",
+  "description": "SOOP 플레이어에서 Ctrl+I로 하단 플레이바·상단 정보 토글, 유튜브처럼 < > 로 재생 속도 조절, Ctrl/Shift+화살표로 1분/5분 이동.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_title": "SOOP 플레이어 단축키\nCtrl+I: 플레이바·상단 정보 토글\n< >: 재생 속도\nCtrl+←→: 1분 이동\nShift+←→: 5분 이동"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.sooplive.com/*",
+        "*://*.sooplive.co.kr/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
