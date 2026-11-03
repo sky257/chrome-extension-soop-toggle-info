@@ -1,10 +1,12 @@
 /* Ctrl+I 토글: 일반/스크린모드/전체화면 모두 html 에 클래스가 붙음
    - .player_ctrlBox : 하단 플레이바
    - #player_info    : 상단 정보(프로필, 제목, 조회수 등)
-   - .btn_screenmode_scrolling : 스크린모드의 '스크롤 해서 더보기' */
+   - .btn_screenmode_scrolling : 스크린모드의 '스크롤 해서 더보기'
+   - #player .view_ctrl : 우측 상단 버튼(채팅 말풍선, 방송리스트 햄버거, 챕터 등) */
 html.soop-ctrl-hidden .player_ctrlBox,
 html.soop-ctrl-hidden #player_info,
-html.soop-ctrl-hidden .btn_screenmode_scrolling {
+html.soop-ctrl-hidden .btn_screenmode_scrolling,
+html.soop-ctrl-hidden #player .view_ctrl {
   display: none !important;
 }
 

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "SOOP 플레이어 단축키",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "SOOP 플레이어에서 Ctrl+I로 하단 플레이바·상단 정보 토글, 유튜브처럼 < > 로 재생 속도 조절, Ctrl/Shift+화살표로 1분/5분 이동.",
   "icons": {
     "16": "icons/icon16.png",
